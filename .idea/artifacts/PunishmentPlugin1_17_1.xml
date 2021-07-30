@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="PunishmentPlugin1.17.1">
+    <output-path>$PROJECT_DIR$/../1.17.1 Test-Server/plugins</output-path>
+    <root id="archive" name="PunishmentPlugin1.17.1.jar">
+      <element id="module-output" name="PunishmentPlugin.main" />
+    </root>
+  </artifact>
+</component>
