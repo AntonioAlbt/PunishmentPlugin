@@ -1,24 +1,24 @@
-  name: PunishmentPlugin
-  main: de.vlant.punishmentplugin.PunishmentPlugin
-  version: 0.1.1
-  depend:
-    - Kotlin
-  api-version: 1.17
-  commands:
-      punishments:
-          aliases:
-              - pmts
-              - pnshmnts
-          description: Manage punishments
-          permission: punishments.punishment
-          usage: /punishments [set|list|unset|help|version] [...]
+name: PunishmentPlugin
+main: de.vlant.punishmentplugin.PunishmentPlugin
+version: 0.1.1
+depend:
+- Kotlin
+api-version: 1.17
+commands:
+  punishments:
+      aliases:
+          - pmts
+          - pnshmnts
+      description: Manage punishments
+      permission: punishments.punishment
+      usage: /punishments [set|list|unset|reload|help|version] [...]
 
-  permissions:
+permissions:
     punishments.punishment:
         default: true
     punishments.manage:
         default: op
-    punishments.get:
+    punishments.get.*:
         children:
           - punishments.get.everyone
           - punishments.get.own
